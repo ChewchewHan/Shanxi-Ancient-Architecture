@@ -1,82 +1,82 @@
-# 山西古建档案库（Shanxi Ancient Architecture）
+# 山西古建檔案庫（Shanxi Ancient Architecture）
 
-> 面向实地访古、建筑史学习与自驾规划的持续更新资料库。重点记录山西现存古建筑的地点、历史年代、建筑本体、彩塑壁画、开放状态、导航坐标和可追溯来源。
+> 面向實地訪古、建築史學習與自駕規劃的持續更新資料庫。重點記錄山西現存古建築的地點、歷史年代、建築本體、彩塑壁畫、開放狀態、導航座標和可追溯來源。
 
-## 项目原则
+## 專案原則
 
-1. **先记录实物，再讨论年代。** 寺院始建年代、现存殿堂建造年代、塑像/壁画年代、历代维修年代分开记录。
-2. **来源可追溯。** 重要历史判断链接官方文物单位、政府部门、专业院校、正式调查报告或学术出版物。
-3. **不把地图标记当作开放证明。** 村内、学校、机关、寺院看护区域及维修中的地点，必须另行确认进入方式。
-4. **不确定就标待核实。** 未查到可信证据的年代、地址、门票和开放信息，不猜测、不补造。
-5. **地图坐标保留来源信息。** 原始 KML 对各地点标记 `CGCS2000`。导入 Google Earth / Google My Maps 后应抽样核对坐标偏移。
+1. **先記錄實物，再討論年代。** 寺院始建年代、現存殿堂建造年代、塑像/壁畫年代、歷代維修年代分開記錄。
+2. **來源可追溯。** 重要歷史判斷連結官方文物單位、政府部門、專業院校、正式調查報告或學術出版物。
+3. **不把地圖示記當作開放證明。** 村內、學校、機關、寺院看護區域及維修中的地點，必須另行確認進入方式。
+4. **不確定就標待核實。** 未查到可信證據的年代、地址、門票和開放資訊，不猜測、不補造。
+5. **地圖座標保留來源資訊。** 原始 KML 對各地點標記 `CGCS2000`。匯入 Google Earth / Google My Maps 後應抽樣核對座標偏移。
 
-## 当前数据（v0.1 初始化）
+## 當前資料（v0.1 初始化）
 
-- 从 [ChewchewHan/VCG](https://github.com/ChewchewHan/VCG) 的 `山西各市.kml` 中整理出 **449条古建地点记录**，覆盖11个地级市。
-- 点位按原始城市文件夹分组；名称、坐标和来源链接保留。
-- 449条是地图线索，不代表449处均为国家级文保单位、全部开放或已经完成断代。
-- 首批建立 **20处重点考察 KML 标记** 与 **19份重点古建专题档案**。
-- 重点档案的断代等级分A/B；其他点位初始统一标作待核实。后续按证据逐条升级。
+- 從 [ChewchewHan/VCG](https://github.com/ChewchewHan/VCG) 的 `山西各市.kml` 中整理出 **449條古建地點記錄**，覆蓋11個地級市。
+- 點位按原始城市資料夾分組；名稱、座標和來源連結保留。
+- 449條是地圖線索，不代表449處均為國家級文保單位、全部開放或已經完成斷代。
+- 首批建立 **20處重點考察 KML 標記** 與 **19份重點古建專題檔案**。
+- 重點檔案的斷代等級分A/B；其他點位初始統一標作待核實。後續按證據逐條升級。
 
 ## 快速入口
 
-| 需要什么 | 文件 |
+| 需要什麼 | 檔案 |
 |---|---|
-| 完整地名、坐标、来源 | [data/sites.csv](data/sites.csv) |
-| GitHub网页可直接浏览的449处清单 | [data/all-sites.md](data/all-sites.md) |
-| 程序读取数据 | [data/sites.json](data/sites.json) |
-| 449处全部地图标记 | [maps/all-sites.kml](maps/all-sites.kml) |
-| 20处重点考察点 | [maps/core-sites.kml](maps/core-sites.kml) |
-| 各市独立地图图层 | [maps/by-city/](maps/by-city/) |
-| Google My Maps 导入说明 | [maps/google-mymaps.md](maps/google-mymaps.md) |
-| 城市数量目录 | [data/city-index.md](data/city-index.md) |
-| 重点建筑专题档案 | [places/README.md](places/README.md) |
-| 断代与来源目录 | [sources/README.md](sources/README.md) |
-| 30天自驾路线 | [itineraries/30-day-self-drive.md](itineraries/30-day-self-drive.md) |
-| 重点路线地图点位 | [itineraries/30-day-route-points.md](itineraries/30-day-route-points.md) |
-| 如何用本仓库规划旅行 | [itineraries/how-to-use-this-repository-with-chatgpt.md](itineraries/how-to-use-this-repository-with-chatgpt.md) |
+| 完整地名、座標、來源 | [data/sites.csv](data/sites.csv) |
+| GitHub網頁可直接瀏覽的449處清單 | [data/all-sites.md](data/all-sites.md) |
+| 程式讀取資料 | [data/sites.json](data/sites.json) |
+| 449處全部地圖示記 | [maps/all-sites.kml](maps/all-sites.kml) |
+| 20處重點考察點 | [maps/core-sites.kml](maps/core-sites.kml) |
+| 各市獨立地圖圖層 | [maps/by-city/](maps/by-city/) |
+| Google My Maps 匯入說明 | [maps/google-mymaps.md](maps/google-mymaps.md) |
+| 城市數量目錄 | [data/city-index.md](data/city-index.md) |
+| 重點建築專題檔案 | [places/README.md](places/README.md) |
+| 斷代與來源目錄 | [sources/README.md](sources/README.md) |
+| 30天自駕路線 | [itineraries/30-day-self-drive.md](itineraries/30-day-self-drive.md) |
+| 重點路線地圖點位 | [itineraries/30-day-route-points.md](itineraries/30-day-route-points.md) |
+| 如何用本倉庫規劃旅行 | [itineraries/how-to-use-this-repository-with-chatgpt.md](itineraries/how-to-use-this-repository-with-chatgpt.md) |
 
-## 城市分布
+## 城市分佈
 
-| 城市 | 地点数 |
+| 城市 | 地點數 |
 |---|---:|
 | 大同 | 19 |
 | 朔州 | 5 |
 | 忻州 | 32 |
 | 太原 | 27 |
-| 阳泉 | 11 |
-| 吕梁 | 33 |
-| 晋中 | 59 |
-| 长治 | 70 |
-| 晋城 | 71 |
-| 临汾 | 44 |
-| 运城 | 78 |
-| **合计** | **449** |
+| 陽泉 | 11 |
+| 呂梁 | 33 |
+| 晉中 | 59 |
+| 長治 | 70 |
+| 晉城 | 71 |
+| 臨汾 | 44 |
+| 運城 | 78 |
+| **合計** | **449** |
 
-## 字段与断代
+## 欄位與斷代
 
-字段解释见 [data/data-dictionary.md](data/data-dictionary.md)。
+欄位解釋見 [data/data-dictionary.md](data/data-dictionary.md)。
 
-- `construction_period`：具体现存建筑或构件年代。
-- `founding_period`：寺院/庙宇创建年代。
-- `dating_status`：待核实、部分核实或已核实。
-- `source_confidence`：A/B/C资料证据等级，不是文物保护级别。
-- `access_checked_at`：开放状态最后核查日；空白代表未核查，不代表开放或关闭。
+- `construction_period`：具體現存建築或構件年代。
+- `founding_period`：寺院/廟宇建立年代。
+- `dating_status`：待核實、部分核實或已核實。
+- `source_confidence`：A/B/C資料證據等級，不是文物保護級別。
+- `access_checked_at`：開放狀態最後核查日；空白代表未核查，不代表開放或關閉。
 
-## Google 地图
+## Google 地圖
 
-打开 [Google My Maps](https://www.google.com/mymaps)，新建地图，选择导入并上传 `maps/all-sites.kml`。建议再单独导入 `maps/core-sites.kml`。详情见 [导入说明](maps/google-mymaps.md)。
+開啟 [Google My Maps](https://www.google.com/mymaps)，新建地圖，選擇匯入並上傳 `maps/all-sites.kml`。建議再單獨匯入 `maps/core-sites.kml`。詳情見 [匯入說明](maps/google-mymaps.md)。
 
-坐标注意：原始文件标注CGCS2000，未在仓库内擅自做GCJ-02/BD-09转换。Google地图或国内地图导入后，如有偏移先核验坐标系，不要直接拖动标记来掩盖偏移。道路入口须另行核对。
+座標注意：原始檔案標註CGCS2000，未在倉庫內擅自做GCJ-02/BD-09轉換。Google地圖或國內地圖匯入後，如有偏移先核驗座標系，不要直接拖動標記來掩蓋偏移。道路入口須另行核對。
 
-## 开放与票务
+## 開放與票務
 
-本仓库是长期历史资料库，不是实时票务接口。开放时间、维修闭馆、预约渠道、票价、库存和道路状况均会变化。每次出行应另查景区/文物管理单位的最新公告并记录核查日期。
+本倉庫是長期歷史資料庫，不是實時票務介面。開放時間、維修閉館、預約渠道、票價、庫存和道路狀況均會變化。每次出行應另查景區/文物管理單位的最新公告並記錄核查日期。
 
-## 许可和贡献
+## 許可和貢獻
 
-资料补充、考据修正和开放状态更新的规则见 [CONTRIBUTING.md](CONTRIBUTING.md)。
+資料補充、考據修正和開放狀態更新的規則見 [CONTRIBUTING.md](CONTRIBUTING.md)。
 
-本仓库以独立整理的地点名称、坐标、考据摘要和外部来源链接为主。原始地图数据权利归原提供者/权利人所有；转载图片、测绘图、书籍扫描和整篇文章前应确认授权。欢迎提供出处明确、能指出具体建筑构件或碑刻证据的修订建议。
+本倉庫以獨立整理的地點名稱、座標、考據摘要和外部來源連結為主。原始地圖資料權利歸原提供者/權利人所有；轉載圖片、測繪圖、書籍掃描和整篇文章前應確認授權。歡迎提供出處明確、能指出具體建築構件或碑刻證據的修訂建議。
 
-建议保护 `main` 分支；通过 Pull Request 审核新增年代和开放信息，避免未经核实的修改进入正式目录。
+建議保護 `main` 分支；透過 Pull Request 稽核新增年代和開放資訊，避免未經核實的修改進入正式目錄。
