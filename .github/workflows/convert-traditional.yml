@@ -1,6 +1,7 @@
 name: Convert repository text to Traditional Chinese
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - traditional-chinese
