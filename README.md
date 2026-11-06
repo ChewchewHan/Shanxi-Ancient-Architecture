@@ -5,55 +5,75 @@
 ## 项目原则
 
 1. **先记录实物，再讨论年代。** 寺院始建年代、现存殿堂建造年代、塑像/壁画年代、历代维修年代分开记录。
-2. **来源可追溯。** 重要历史判断必须链接官方文物单位、政府部门、专业院校、正式调查报告或学术出版物。
+2. **来源可追溯。** 重要历史判断链接官方文物单位、政府部门、专业院校、正式调查报告或学术出版物。
 3. **不把地图标记当作开放证明。** 村内、学校、机关、寺院看护区域及维修中的地点，必须另行确认进入方式。
 4. **不确定就标待核实。** 未查到可信证据的年代、地址、门票和开放信息，不猜测、不补造。
-5. **地图坐标保留来源信息。** 原始 KML 声明坐标类型为 CGCS2000；导入 Google Earth / Google My Maps 后，应抽样核对位置，不把未经转换的坐标用于测绘或导航精度场景。
+5. **地图坐标保留来源信息。** 原始 KML 对各地点标记 `CGCS2000`。导入 Google Earth / Google My Maps 后应抽样核对坐标偏移。
 
-## 当前数据
+## 当前数据（v0.1 初始化）
 
-- 初始地点目录：来自 [ChewchewHan/VCG](https://github.com/ChewchewHan/VCG) 的「山西各市.kml」。
-- 从 11 个「某市古建」文件夹整理出 **449 条地点记录**，按市分组；原始名称和经纬度保留。
-- 449 条是线索清单，不代表 449 处均为国家级文保单位、对外开放或已完成断代。
-- 主线旅行路线为研究者拟定的考察建议，不等同于官方旅游线路，也不承诺实时开放。
+- 从 [ChewchewHan/VCG](https://github.com/ChewchewHan/VCG) 的 `山西各市.kml` 中整理出 **449条古建地点记录**，覆盖11个地级市。
+- 点位按原始城市文件夹分组；名称、坐标和来源链接保留。
+- 449条是地图线索，不代表449处均为国家级文保单位、全部开放或已经完成断代。
+- 首批建立 **20处重点考察 KML 标记** 与 **19份重点古建专题档案**。
+- 重点档案的断代等级分A/B；其他点位初始统一标作待核实。后续按证据逐条升级。
 
-## 目录
+## 快速入口
 
-| 路径 | 内容 |
+| 需要什么 | 文件 |
 |---|---|
-| `data/sites.csv` | 全部地点的表格目录 |
-| `data/sites.json` | 适合程序读取的结构化目录 |
-| `maps/all-sites.kml` | 全部 449 个地点的 Google Earth / My Maps 标记 |
-| `maps/core-sites.kml` | 重点古建精选标记 |
-| `maps/by-city/` | 各市独立 KML 图层 |
-| `places/` | 重点建筑的独立研究档案 |
-| `itineraries/30-day-self-drive.md` | 30 天自驾考察建议 |
-| `sources/` | 来源、断代与开放信息核实规则 |
+| 完整地名、坐标、来源 | [data/sites.csv](data/sites.csv) |
+| 程序读取数据 | [data/sites.json](data/sites.json) |
+| 449处全部地图标记 | [maps/all-sites.kml](maps/all-sites.kml) |
+| 20处重点考察点 | [maps/core-sites.kml](maps/core-sites.kml) |
+| 各市独立地图图层 | [maps/by-city/](maps/by-city/) |
+| Google My Maps 导入说明 | [maps/google-mymaps.md](maps/google-mymaps.md) |
+| 城市数量目录 | [data/city-index.md](data/city-index.md) |
+| 重点建筑专题档案 | [places/README.md](places/README.md) |
+| 断代与来源目录 | [sources/README.md](sources/README.md) |
+| 30天自驾路线 | [itineraries/30-day-self-drive.md](itineraries/30-day-self-drive.md) |
+| 重点路线地图点位 | [itineraries/30-day-route-points.md](itineraries/30-day-route-points.md) |
+| 如何用本仓库规划旅行 | [itineraries/how-to-use-this-repository-with-chatgpt.md](itineraries/how-to-use-this-repository-with-chatgpt.md) |
 
-## 朝代与年代字段
+## 城市分布
 
-- `construction_period`：现存主体或重要遗存的年代，只有达到来源门槛才填写。
-- `founding_period`：寺院/庙宇的始建年代；与现存建筑年代不同。
-- `repairs`：可核实的重修、迁建和保护工程。
-- `dating_confidence`：`A`（正式调查/铭文/权威研究）、`B`（可靠来源相互印证）、`C`（线索或待核实）。
-- `access_status`：只保存有来源和核查日期的状态；空白表示尚未核对，不代表开放或关闭。
+| 城市 | 地点数 |
+|---|---:|
+| 大同 | 19 |
+| 朔州 | 5 |
+| 忻州 | 32 |
+| 太原 | 27 |
+| 阳泉 | 11 |
+| 吕梁 | 33 |
+| 晋中 | 59 |
+| 长治 | 70 |
+| 晋城 | 71 |
+| 临汾 | 44 |
+| 运城 | 78 |
+| **合计** | **449** |
 
-## Google 地图使用
+## 字段与断代
 
-1. 打开 [Google My Maps](https://www.google.com/mymaps)。
-2. 新建地图，选择「导入」。
-3. 上传 `maps/all-sites.kml` 或按城市导入 `maps/by-city/` 文件。
-4. 建议按朝代、核实等级、开放状态另建图层。Google My Maps 的格式和导入限制以其官方帮助页面为准。
-5. 如果标记偏移，先检查坐标参考系，不要手动移动原始点位来掩盖坐标问题。
+字段解释见 [data/data-dictionary.md](data/data-dictionary.md)。
 
-## 资料状态说明
+- `construction_period`：具体现存建筑或构件年代。
+- `founding_period`：寺院/庙宇创建年代。
+- `dating_status`：待核实、部分核实或已核实。
+- `source_confidence`：A/B/C资料证据等级，不是文物保护级别。
+- `access_checked_at`：开放状态最后核查日；空白代表未核查，不代表开放或关闭。
 
-本仓库会持续补充考据。初始版本中，未建立独立档案的地点统一保留为「年代待核实」。请勿把空字段理解为没有历史价值。
+## Google 地图
+
+打开 [Google My Maps](https://www.google.com/mymaps)，新建地图，选择导入并上传 `maps/all-sites.kml`。建议再单独导入 `maps/core-sites.kml`。详情见 [导入说明](maps/google-mymaps.md)。
+
+坐标注意：原始文件标注CGCS2000，未在仓库内擅自做GCJ-02/BD-09转换。Google地图或国内地图导入后，如有偏移先核验坐标系，不要直接拖动标记来掩盖偏移。道路入口须另行核对。
+
+## 开放与票务
+
+本仓库是长期历史资料库，不是实时票务接口。开放时间、维修闭馆、预约渠道、票价、库存和道路状况均会变化。每次出行应另查景区/文物管理单位的最新公告并记录核查日期。
 
 ## 许可和贡献
 
-本仓库以独立整理的名称、坐标、考据摘要和外部来源链接为主。原始地图数据的权利归原提供者/权利人所有；转载图片、测绘图、书籍扫描和整篇文章前，应先确认授权。欢迎提交来源明确、能指出具体建筑构件或碑刻证据的修订建议。
+本仓库以独立整理的地点名称、坐标、考据摘要和外部来源链接为主。原始地图数据权利归原提供者/权利人所有；转载图片、测绘图、书籍扫描和整篇文章前应确认授权。欢迎提供出处明确、能指出具体建筑构件或碑刻证据的修订建议。
 
----
-
-资料库版本：v0.1（初始化）
+建议保护 `main` 分支；通过 Pull Request 审核新增年代和开放信息，避免未经核实的修改进入正式目录。
