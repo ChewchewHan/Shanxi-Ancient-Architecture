@@ -40,7 +40,7 @@
 
 ## 數據來源鏈
 
-原始地點與座標線索來自 [ChewchewHan/VCG — 山西各市.kml](https://github.com/ChewchewHan/VCG/blob/main/%E5%B1%B1%E8%A5%BF%E5%90%84%E5%B8%82.kml)。本倉庫重新整理的CSV、JSON和KML保留地點名稱與座標，朝代不從名稱推斷。
+原始地點位置資訊來自使用者提供的 [Bilibili 影片（BV12eYXeTE2A）](https://www.bilibili.com/video/BV12eYXeTE2A)，再整理並轉換為 Google Earth KML 格式。本倉庫據此建立 CSV、JSON 與 KML 資料；朝代不從地名推斷。原始座標基準與轉換參數仍待核實。
 
 ## 來源審查規則
 
