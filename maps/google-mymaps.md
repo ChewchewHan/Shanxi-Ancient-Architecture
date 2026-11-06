@@ -1,16 +1,16 @@
-# Google Maps / Google My Maps 导入指南
+# Google Maps / Google My Maps 導入指南
 
-## 最稳妥方式
+## 最穩妥方式
 
-1. 打开 [Google My Maps](https://www.google.com/mymaps)，新建一张地图。
-2. 在图层中选择「导入」，上传 `all-sites.kml`；若想分区管理，可改为分别导入 `by-city/` 中各城市 KML。
-3. 单图层不建议无限堆叠。可按城市拆图层；精华点位另导入 `core-sites.kml`。
-4. 点击标记可查看原始地点名称、城市、年代摘要及 Google Maps 检索链接。
+1. 打開 [Google My Maps](https://www.google.com/mymaps)，新建一張地圖。
+2. 在圖層中選擇「導入」，上傳 `all-sites.kml`；若想分區管理，可改爲分別導入 `by-city/` 中各城市 KML。
+3. 單圖層不建議無限堆疊。可按城市拆圖層；精華點位另導入 `core-sites.kml`。
+4. 點擊標記可查看原始地點名稱、城市、年代摘要及 Google Maps 檢索鏈接。
 
-## 坐标警告
+## 座標警告
 
-源文件 `VCG/山西各市.kml` 内含 `<OvCoordType>CGCS2000</OvCoordType>` 标记。本项目保留源坐标，未擅自做 GCJ-02 / BD-09 转换。Google 地图底图常用 WGS84/全球地理定位体系，若导入后位置出现偏移，应先确认坐标转换方案，不能直接拖动标记掩盖系统差异。对精确导航请以现场道路和地图应用重新检索为准。
+位置資訊依據 [Bilibili 影片（BV12eYXeTE2A）](https://www.bilibili.com/video/BV12eYXeTE2A) 整理，並轉換為 Google Earth KML 格式。本項目保留源座標，未擅自做 GCJ-02 / BD-09 轉換。Google 地圖底圖常用 WGS84/全球地理定位體系，若導入後位置出現偏移，應先確認座標轉換方案，不能直接拖動標記掩蓋系統差異。對精確導航請以現場道路和地圖應用重新檢索爲準。
 
-## 数据限制
+## 數據限制
 
-KML 点位只代表来源地图上的标注，不代表可入内、开放、售票、道路可达或断代完成。学校、村委会、机关、住户范围内的地点，应先取得许可。
+KML 點位只代表來源地圖上的標註，不代表可入內、開放、售票、道路可達或斷代完成。學校、村委會、機關、住戶範圍內的地點，應先取得許可。
