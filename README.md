@@ -22,7 +22,8 @@
 
 | 需要什么 | 文件 |
 |---|---|
-| 完整地名、坐标、来源 | [data/sites.csv](data/sites.csv) |\n| GitHub网页可直接浏览的449处清单 | [data/all-sites.md](data/all-sites.md) |
+| 完整地名、坐标、来源 | [data/sites.csv](data/sites.csv) |
+| GitHub网页可直接浏览的449处清单 | [data/all-sites.md](data/all-sites.md) |
 | 程序读取数据 | [data/sites.json](data/sites.json) |
 | 449处全部地图标记 | [maps/all-sites.kml](maps/all-sites.kml) |
 | 20处重点考察点 | [maps/core-sites.kml](maps/core-sites.kml) |
